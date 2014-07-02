@@ -54,7 +54,7 @@ static UIViewController *_presentVC;
     for(NSString* thisButtonTitle in buttonTitles)
         [actionSheet addButtonWithTitle:thisButtonTitle];
     
-    [actionSheet addButtonWithTitle:NSLocalizedString(@"Cancel", @"")];
+    [actionSheet addButtonWithTitle:NSLocalizedString(@"取消", @"")];
     actionSheet.cancelButtonIndex = [buttonTitles count];
     
     if(destructiveButtonTitle)

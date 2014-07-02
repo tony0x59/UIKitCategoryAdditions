@@ -184,7 +184,7 @@ static UIViewController *_presentVC;
         }
         else
         {
-            _dismissBlock(buttonIndex);
+            _dismissBlock(self, buttonIndex);
         }
     }
 }

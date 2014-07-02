@@ -113,7 +113,7 @@ static char CANCEL_IDENTIFER;
     else
     {
         if (alertView.dismissBlock) {
-            alertView.dismissBlock(buttonIndex - 1); // cancel button is button 0
+            alertView.dismissBlock(self, buttonIndex - 1); // cancel button is button 0
         }
     }
 }

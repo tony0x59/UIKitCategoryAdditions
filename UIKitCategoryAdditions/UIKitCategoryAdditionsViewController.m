@@ -41,7 +41,7 @@
                             message:@"Hello World" 
                   cancelButtonTitle:@"Dismiss" 
                   otherButtonTitles:[NSArray arrayWithObjects:@"First", @"Second", nil]
-                          onDismiss:^(int buttonIndex)
+                          onDismiss:^(id sender, int buttonIndex)
      {
          NSLog(@"%d", buttonIndex);
      }
@@ -59,7 +59,7 @@
                  destructiveButtonTitle:@"Delete" 
                                 buttons:[NSArray arrayWithObjects:@"But 1", @"But 2", nil]
                              showInView:self.view 
-                              onDismiss:^(int buttonIndex)
+                              onDismiss:^(id sender, int buttonIndex)
      {
          NSLog(@"%d", buttonIndex);
      }
